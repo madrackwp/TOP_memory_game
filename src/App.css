@@ -1,0 +1,22 @@
+.cards-list {
+  width: 100vw;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Set 6 columns for large screens */
+}
+
+.cards-list .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cards-list .card:hover {
+  transform: scale(1.1);
+}
+
+.cards-list .card img {
+  width: 200px;
+  height: auto;
+}
